@@ -1,7 +1,7 @@
 # h1 Homework
 
-## Summary on the podcast
-  For this task I choose Episode... to listen. I found this topic very interesting
+## Summary on the podcast I listened
+  For this task I choose __Episode 53: Shadow Brokers__ to listen. I found this topic very interesting
 
 
 
