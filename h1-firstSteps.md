@@ -15,10 +15,7 @@
 
 ## My key summary on Intrusion Kill Chain and Course of Action
 
-The intrusion kill chain is a concept used in cybersecurity to describe the various stages of a cyber attack, from the initial planning and reconnaissance to the final objective of the attacker. The idea is to break down the attack process into a series of distinct steps, each of which represents a phase in the overall attack lifecycle. By understanding and analyzing these stages, cybersecurity professionals can develop strategies and defenses to detect, prevent, and mitigate cyber threats.
-
-
-The intrusion kill chain is a concept used in cybersecurity to describe the various stages of a cyber attack, from the initial planning and reconnaissance to the final objective of the attacker. The idea is to break down the attack process into a series of distinct steps, each of which represents a phase in the overall attack lifecycle. By understanding and analyzing these stages, cybersecurity professionals can develop strategies and defenses to detect, prevent, and mitigate cyber threats.
+The intrusion kill chain is a concept used in cybersecurity to describe the various stages of a cyber attack, from the initial planning and reconnaissance to the final objective of the attacker. The idea is to break down the attack process into a series of distinct steps, each of which represents a phase in the overall attack lifecycle. By understanding and analyzing these stages, cybersecurity professionals can develop strategies and defenses to detect, prevent, and mitigate cyber threats.This is anintegrated, end-to-endprocess described as a “chain” because anyone deficiency will interrupt the entire process.
 
 The typical stages of an intrusion kill chain include:
 
