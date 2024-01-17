@@ -33,7 +33,7 @@ The typical stages of an intrusion kill chain include:
 
 * Actions on Objectives: This is the final phase where the attackers achieve their primary goals, which could include data theft, system manipulation, or disruption of services.
 
-The term "course of action" in the context of cybersecurity generally refers to the steps or strategies taken by an organization or individual to address a security incident or mitigate potential risks. It involves planning and executing a set of actions to prevent, detect, respond to, and recover from security incidents. The specific course of action can vary depending on the nature of the threat, the organization's security posture, and the type of assets at risk. Here is a general outline of the course of action in cybersecurity:
+The term "course of action" in the context of cybersecurity generally refers to the steps or strategies taken by an organization or individual to address a security incident or mitigate potential risks. It involves planning and executing a set of actions to prevent, detect, respond to, and recover from security incidents. The specific course of action can vary depending on the nature of the threat, the organization's security posture, and the type of assets at risk. Here is a general outline of the course of action in cybersecurity,
 
 * Prevention:
   - Implement security best practices and policies.
@@ -41,30 +41,18 @@ The term "course of action" in the context of cybersecurity generally refers to 
 * Detection:
   - Deploy security monitoring tools and systems.
   - Establish baseline network behavior and monitor for anomalies.
-* Response:
+* Response/Deny:
   - Develop an incident response plan outlining roles and responsibilities.
   - Establish a Computer Security Incident Response Team (CSIRT) or Incident Response Team (IRT).
-* Containment:
+* Containment/Disrupt/Degrade:
   - Identify the extent of the compromise.
   - Isolate and contain affected systems or networks.
-* Eradication:
+* Eradication/Destroy:
   - Identify and eliminate the root cause of the security incident.
   - Remove malware or unauthorized access points.
 * Recovery:
   - Restore affected systems from clean backups.
   - Monitor for any signs of residual compromise.
-* Communication:
-  - Maintain open and transparent communication with stakeholders.
-  - Inform affected parties about the incident and the steps being taken.
-* Post-Incident Review:
-  - Conduct a thorough review of the incident response process.
-  - Identify areas for improvement and update incident response plans accordingly.
-
-
-
-
-
-
 
 ## Installing Debian
 
