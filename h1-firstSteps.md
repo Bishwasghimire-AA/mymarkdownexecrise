@@ -3,6 +3,9 @@
 ## Summary on the podcast I listened
 
   For this task I choose [__Episode 53: Shadow Brokers__](https://darknetdiaries.com/episode/53/) to listen. I found this topic very interesting and here are the key topics I found interesting
+  - Shadow brokers are the hacking group who claimed to have leak the NSA ANT catalouges
+      -The catalouge was a collection of sophisticated hacking tools and technologies used by the Tailored Access Operations (TAO) division of the United States National Security Agency (NSA). "ANT" stands for Advanced Network Technology, and the catalog provides details about various hardware and software implants, exploits, and techniques employed by the NSA for cyber operations.
+ - The leaks included vulnerabilities affecting various operating systems and network equipment, and they had significant implications for cybersecurity worldwide. Some of the exploits released by the Shadow Brokers were later used in high-profile cyber attacks, such as the WannaCry ransomware attack in 2017.
 
 
 
