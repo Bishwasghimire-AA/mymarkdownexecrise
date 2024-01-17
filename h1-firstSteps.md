@@ -22,19 +22,19 @@ The intrusion kill chain is a concept used in cybersecurity to describe the vari
 
 The typical stages of an intrusion kill chain include:
 
-Reconnaissance: In this phase, attackers gather information about the target, such as identifying potential vulnerabilities, system configurations, and potential targets.
+* Reconnaissance: In this phase, attackers gather information about the target, such as identifying potential vulnerabilities, system configurations, and potential targets.
 
-Weaponization: This is where the attackers create or acquire the tools and malware needed to exploit the identified vulnerabilities.
++ Weaponization: This is where the attackers create or acquire the tools and malware needed to exploit the identified vulnerabilities.
 
-Delivery: Attackers deliver the malicious payload to the target system, often using methods like phishing emails, infected websites, or other means.
+- Delivery: Attackers deliver the malicious payload to the target system, often using methods like phishing emails, infected websites, or other means.
 
-Exploitation: The malicious payload is executed on the target system, taking advantage of the vulnerabilities identified in the reconnaissance phase.
+* Exploitation: The malicious payload is executed on the target system, taking advantage of the vulnerabilities identified in the reconnaissance phase.
 
-Installation: Once the payload has exploited the system, it installs itself or other components on the compromised system to establish a persistent presence.
+* Installation: Once the payload has exploited the system, it installs itself or other components on the compromised system to establish a persistent presence.
 
-Command and Control (C2): The attackers establish communication channels with the compromised system to control and manage the ongoing attack.
+* Command and Control (C2): The attackers establish communication channels with the compromised system to control and manage the ongoing attack.
 
-Actions on Objectives: This is the final phase where the attackers achieve their primary goals, which could include data theft, system manipulation, or disruption of services.
+* Actions on Objectives: This is the final phase where the attackers achieve their primary goals, which could include data theft, system manipulation, or disruption of services.
 
 
 
