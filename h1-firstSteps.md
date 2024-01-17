@@ -35,24 +35,12 @@ The typical stages of an intrusion kill chain include:
 
 The term "course of action" in the context of cybersecurity generally refers to the steps or strategies taken by an organization or individual to address a security incident or mitigate potential risks. It involves planning and executing a set of actions to prevent, detect, respond to, and recover from security incidents. The specific course of action can vary depending on the nature of the threat, the organization's security posture, and the type of assets at risk. Here is a general outline of the course of action in cybersecurity,
 
-* Prevention:
-  - Implement security best practices and policies.
-  - Use firewalls, intrusion detection/prevention systems, and other preventive technologies.
-* Detection:
-  - Deploy security monitoring tools and systems.
-  - Establish baseline network behavior and monitor for anomalies.
-* Response/Deny:
-  - Develop an incident response plan outlining roles and responsibilities.
-  - Establish a Computer Security Incident Response Team (CSIRT) or Incident Response Team (IRT).
-* Containment/Disrupt/Degrade:
-  - Identify the extent of the compromise.
-  - Isolate and contain affected systems or networks.
-* Eradication/Destroy:
-  - Identify and eliminate the root cause of the security incident.
-  - Remove malware or unauthorized access points.
-* Recovery:
-  - Restore affected systems from clean backups.
-  - Monitor for any signs of residual compromise.
+* Detect: Indicates the action of identifying and recognizing a threat or activity.
+* Deny: Involves preventing an adversary from accessing, using, or acquiring specific information or resources.
+* Disrupt: Focuses on interfering with or interrupting the adversary's operations or communications.
+* Degrade: Refers to reducing the quality or effectiveness of an adversary's capabilities.
+* Deceive: Involves providing false or misleading information to mislead or confuse the adversary.
+* Destroy: Entails eliminating or rendering useless the adversary's capabilities or resources.
 
 ## Installing Debian
 
