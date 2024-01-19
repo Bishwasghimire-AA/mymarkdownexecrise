@@ -54,3 +54,17 @@ Insatlled live debian using the Virtual Machiines. I ran into few problems durin
 - Finally I'm able to have my own Linux OS in my VM. I followed all the insatllation guide provided in Tero's [Website](https://terokarvinen.com/2021/install-debian-on-virtualbox/)
 
  And here's how my desktop works after the final tweaking.![my_debian](https://github.com/Bishwasghimire-AA/mymarkdownexecrise/assets/144313610/aba1e167-7aeb-4e5a-b6e9-5b8719d4a95a)
+
+ ## Voluntary multi-week bonus( Set1 Challenge1 )
+
+Having no previous knowledge of any CLI or any coding I tried to do this first task using help from [ChatGPT](https://chat.openai.com/c/5eba79d8-012a-4fb7-bdca-fbca8edb36ef). and this [Forum](https://superuser.com/questions/158142/how-can-i-convert-from-hex-to-base64/416630). I am very happy to see that I got the result wanted in the [Website](https://www.cryptopals.com/sets/1/challenges/1). Things I learned for this command were,
+- echo Command:
+  -echo is a command used to print text to the terminal.
+- xxd Command:
+  -xxd is a command-line utility that creates a hex dump of a given file or standard input.
+  -The -r -p options tell xxd to reverse (convert from hex to binary) and use plain formatting (no additional information).
+- base64 Command:
+  -base64 is a command-line utility that encodes or decodes data in base64.
+  -It takes the binary output from xxd (which was the reverse of the original hex string) and encodes it in base64.
+
+  Here is my result ![set1_chlng1_cryptopal](https://github.com/Bishwasghimire-AA/mymarkdownexecrise/assets/144313610/6d65b4cd-0336-4a7d-93a9-c2916f73b8ad)
