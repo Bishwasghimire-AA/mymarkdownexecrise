@@ -44,7 +44,7 @@ The term "course of action" in the context of cybersecurity generally refers to 
 
 ## Installing Debian
 
-Insatlled live debian using the Virtual Machiines. I ran into few problems during the installation
+Installed live debian using the Virtual Machiines. Host device is running on windows 11 OS. I ran into few problems during the installation
 - First problem I ran into during the installation was the warning of "Please use a kernel appropirate for your CPU". Here is the Screenshot ![Fail_to_install_debian](https://github.com/Bishwasghimire-AA/mymarkdownexecrise/assets/144313610/053a88a7-27f3-4ce8-b289-5c84da0e3f5f)
 
   I fixed this problem manually by changing the debian file to 64-bit, and it worked
