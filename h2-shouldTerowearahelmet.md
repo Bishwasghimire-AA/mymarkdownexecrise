@@ -31,15 +31,30 @@ Threat modeling manifesto identifies two key guidelines, **values** and **princi
 
    After having the knowledge of both system and threats, each threat identified earlier must have a response. Threat responses are similar, but not identical, to risk responses. [Adam Shostack](https://shostack.org/resources/threat-modeling) lists the following responses:
 
-      - Mitigate. Take action to reduce the likelihood that the threat will materialize.
+      - Mitigate: Take action to reduce the likelihood that the threat will materialize.
       - Eliminate: Simply remove the feature or component that is causing the threat.
-      - Transfer. Shift responsibility to another entity such as the customer.
-      - Accept. Do not mitigate, eliminate, or transfer the risk because none of the above options are acceptable given business requirements or constraints.
+      - Transfer: Shift responsibility to another entity such as the customer.
+      - Accept: Do not mitigate, eliminate, or transfer the risk because none of the above options are acceptable given business requirements or constraints.
 
   - Did we do a good job ?
-  
-     This is done by asking questions if they are willing to recomend threat modeling with colleagues.
+    
+    The threat model must be reviewed by all stakeholders, not just the development or security teams. You need to validate your threat model by checking your work to make sure it’s as complete as possible.
 
+## a) Security hygiene
+
+* Security hygiene or cyber hygiene is a term that refers to best practices and other activities that computer system administrators and users can undertake to improve their cybersecurity while engaging in common online activities, such as web browsing, emailing, texting, etc.
+* [Basic Practices](https://www.digitalguardian.com/blog/what-cyber-hygiene-definition-cyber-hygiene-benefits-best-practices-and-more) includes,
+    -  Documenting all current equipmens and programs like hardware, software and applications in use
+    -  Analyze the list of equipment and programs
+    -  Create a common security hygiene policies and employ a cybersecurity framework 
+* Some useful security hygiene practices I consider useful are
+    - Enable multi-factor authentication
+    - keeping software updated
+    - practice safe browsing(HTTPS-enabled websites)
+    - Back up important data
+ 
+## b) Threat model
+   I have use [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool) for this taskand if you like you can directly [download](https://aka.ms/threatmodelingtool) and try.
 
   
   
