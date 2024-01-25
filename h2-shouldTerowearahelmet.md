@@ -10,7 +10,7 @@ Threat modeling is a process by which potential threats, such as structural vuln
 * What are we going to do about it ?
 * Did we do a good enough job ?
 
-All these questions will be explained on the following summary
+All these questions will be explained on the [following](https://github.com/bishwasghimire22/mymarkdownexecrise/blob/main/h2-shouldTerowearahelmet.md#summary-on-worlds-shortest-threat-modeling-course) summary
 
 Threat modeling manifesto identifies two key guidelines, **values** and **principles**.
 
