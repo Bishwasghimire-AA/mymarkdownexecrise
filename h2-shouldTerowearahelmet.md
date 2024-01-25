@@ -54,6 +54,27 @@ Threat modeling manifesto identifies two key guidelines, **values** and **princi
     - Back up important data
  
 ## b) Threat model
+
+**Company Name: JJ Oy**
+
+  JJ Oy is a company operating in the retail sector. Our main focus is to provide our customer with smooth and secure shoppping experience. Our prioritized assets are (listed high pririty first),
+* Customer Personal Information (names, addresses, payment details): Critical due to privacy and regulations,
+* E-commerce Platform and Website: Needed for continuity
+* Inventory Management System: Essential for product availability
+* Supplier Contracts and Information: Needed for maintaining buisness relationship
+* Employee Information
+* Financial Transactions Data
+
+
+
+
+
+
+
+
+
+
+
    I have use [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool) for this taskand if you like you can directly [download](https://aka.ms/threatmodelingtool) and try.
 
   
