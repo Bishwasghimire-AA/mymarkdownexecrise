@@ -57,14 +57,71 @@ Threat modeling manifesto identifies two key guidelines, **values** and **princi
 
 **Company Name: JJ Oy**
 
-  JJ Oy is a company operating in the retail sector. Our main focus is to provide our customer with smooth and secure shoppping experience. Our prioritized assets are (listed high pririty first),
-* Customer Personal Information (names, addresses, payment details): Critical due to privacy and regulations,
+  JJ Oy is a company operating in the retail sector. Our main focus is to provide our customer with smooth and secure shoppping experience.  As a small business, trust and reputation are critical for success. The protection of customer information and secure online transactions is vital for maintaining customer trust and satisfaction.
+
+  ### What are we working on ?
+  
+#### Our key assets
+
+* Crown Jewel: Customer Personal Information (names, addresses, payment details): Critical due to privacy and regulations,
+* Financial Transactions Data: Credit card details, Billing informations etc.
 * E-commerce Platform and Website: Needed for continuity
 * Inventory Management System: Essential for product availability
-* Supplier Contracts and Information: Needed for maintaining buisness relationship
+* Supply chain Information: Needed for maintaining buisness relationship
 * Employee Information
-* Financial Transactions Data
 
+#### Prioritization
+
+* Crown Jewel: Customer Personal Information, Payment Information
+* High: Product Inventory and Pricing Information, Website and E-commerce Platform
+* Medium: Customer Service Database, Supply Chain Information
+* Low: Employee Information
+
+
+
+
+
+### What can go wrong ?
+
+Applying the STRIDE model, potential threats include Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.
+
+* Unauthorized access to customer personal information leading to privacy breaches.
+* Tampering with the e-commerce platform, affecting product listings or pricing.
+* Employees repudiating actions, such as denying responsibility for unauthorized access.
+* Disclosure of sensitive supplier information impacting business relationships.
+* Potential denial-of-service attacks affecting the availability of the online shopping platform.
+
+### What are we going to do about it ?
+
+#### Risk Mitigation Strategies
+
+* Implement multi-factor authentication and encryption for customer data.
+* Regularly update and patch the e-commerce platform to address vulnerabilities.
+* Establish robust employee training programs to minimize the risk of insider threats.
+* Implement secure communication channels with suppliers to protect sensitive information.
+* Utilize content delivery networks and DDoS mitigation services to mitigate the impact of denial-of-service attacks.
+
+
+#### Risk Management Approach
+
+* Reduce attack surface through regular security assessments and penetration testing.
+* Limit entry points through secure coding practices and regular vulnerability assessments.
+* Transfer risk through cyber insurance to cover potential financial losses.
+* Accept certain risks that are deemed low-impact and have effective response plans in place.
+
+### Did we do a good enough job ?
+
+#### Continuous Evaluation
+
+* Regular security audits and penetration testing to identify and address vulnerabilities.
+* Continuous threat modeling to adapt to evolving threats and adjust mitigation strategies.
+* Employee awareness programs to ensure ongoing adherence to security best practices.
+
+
+#### Feedback Loop
+
+* Regular review of incident response plans to incorporate lessons learned from real-world incidents.
+* Collaboration with industry peers and information sharing to stay updated on emerging threats.
 
 
 
