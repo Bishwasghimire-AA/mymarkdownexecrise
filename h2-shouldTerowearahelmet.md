@@ -59,6 +59,7 @@ Threat modeling manifesto identifies two key guidelines, **values** and **princi
 
   JJ Oy is a company operating in the retail sector. Our main focus is to provide our customer with smooth and secure shoppping experience.  As a small business, trust and reputation are critical for success. The protection of customer information and secure online transactions is vital for maintaining customer trust and satisfaction.
 
+
   ### What are we working on ?
   
 #### Our key assets
@@ -77,13 +78,13 @@ Threat modeling manifesto identifies two key guidelines, **values** and **princi
 * Medium: Customer Service Database, Supply Chain Information
 * Low: Employee Information
 
-
+![Basic_threat_modeling](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/d2d7a245-9fea-40b6-be69-5829e8470ab2)
 
 
 
 ### What can go wrong ?
 
-Applying the STRIDE model, potential threats include Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.
+Applying the STRIDE model, potential threats include Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege. Following risks are identified,
 
 * Unauthorized access to customer personal information leading to privacy breaches.
 * Tampering with the e-commerce platform, affecting product listings or pricing.
@@ -91,13 +92,35 @@ Applying the STRIDE model, potential threats include Spoofing, Tampering, Repudi
 * Disclosure of sensitive supplier information impacting business relationships.
 * Potential denial-of-service attacks affecting the availability of the online shopping platform.
 
+  #### Prioritization of Risks
+* High Expected Value: Unauthorized access to customer personal and payment information.
+* Medium Expected Value: Tampering with product pricing, denial of service.
+* Low Expected Value: Repudiation, information disclosure, elevation of privilege
+
+#### Known Threat Actors
+
+* Cybercriminals targeting e-commerce platforms for financial gain.
+* Competitors engaging in price manipulation for a competitive advantage.
+* Disgruntled employees with access to sensitive databases.
+
+#### COI - Capability, Opportunity, Intent
+
+* Capability: Basic hacking skills, knowledge of common e-commerce vulnerabilities.
+* Opportunity: Access to the internet, potential insider threats.
+* Intent: Motivation to gain financial advantage, competitive edge, or cause reputational harm.
+  
+![Threats](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/b63f008c-ac69-4f5a-9089-67d2fd0ccd2f)
+
 ### What are we going to do about it ?
 
 #### Risk Mitigation Strategies
 
 * Implement multi-factor authentication and encryption for customer data.
+* Utilize encryption for customer payment information and sensitive data
 * Regularly update and patch the e-commerce platform to address vulnerabilities.
-* Establish robust employee training programs to minimize the risk of insider threats.
+* Train employees on security best practices and conduct background checks
+* Utilize encryption for customer payment information and sensitive data.
+* Implement a web application firewall to protect against common web-based attacks.
 * Implement secure communication channels with suppliers to protect sensitive information.
 * Utilize content delivery networks and DDoS mitigation services to mitigate the impact of denial-of-service attacks.
 
@@ -105,23 +128,33 @@ Applying the STRIDE model, potential threats include Spoofing, Tampering, Repudi
 #### Risk Management Approach
 
 * Reduce attack surface through regular security assessments and penetration testing.
-* Limit entry points through secure coding practices and regular vulnerability assessments.
+* Minimize the attack surface by implementing security measures on the e-commerce platform.
 * Transfer risk through cyber insurance to cover potential financial losses.
+* Use secure payment gateways to handle customer transactions.
+* Limit entry points through secure coding practices and regular vulnerability assessments.
+* Avoid storing unnecessary customer information and limit access to sensitive data.
 * Accept certain risks that are deemed low-impact and have effective response plans in place.
 
 ### Did we do a good enough job ?
 
-#### Continuous Evaluation
+#### Continuous improvemnet
 
-* Regular security audits and penetration testing to identify and address vulnerabilities.
+* Regularly conduct security assessments and vulnerability scans.
+* Engage in regular security awareness training for employees.
+* Monitor industry trends and updates to stay informed about new threats.
+* Establish incident response procedures and conduct simulated exercises.
 * Continuous threat modeling to adapt to evolving threats and adjust mitigation strategies.
-* Employee awareness programs to ensure ongoing adherence to security best practices.
 
 
-#### Feedback Loop
+
+#### Evaluation
 
 * Regular review of incident response plans to incorporate lessons learned from real-world incidents.
 * Collaboration with industry peers and information sharing to stay updated on emerging threats.
+* Regularly assess the effectiveness of implemented security measures.
+* Monitor customer feedback and reviews for any security-related concerns.
+* Stay informed about regulatory changes affecting online retail security.
+* Conduct periodic third-party security audits for an independent assessment
 
 
 
