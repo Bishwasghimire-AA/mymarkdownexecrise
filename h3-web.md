@@ -48,3 +48,12 @@ In Developers tool(F12 or Ctrl+Shift+i), find the Network tab and attck2, and in
 
 
 ![HTTP_Basics_3_number](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/931a97b6-e645-45f8-82b1-3615f7be33ff)
+
+### HTTP Proxies
+
+ HTTP Proxies receive requests from a client and relay them. Proxies sit between your client and the server the client is talking to.
+
+  
+
+
+
