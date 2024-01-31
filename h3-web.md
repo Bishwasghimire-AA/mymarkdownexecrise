@@ -35,4 +35,16 @@
 I run webgoat in my browser using the Jar file from [Webgoat github](https://github.com/WebGoat/WebGoat/releases) repository and instruction from [Try Web Hacking on New Webgoat 2023.4](https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/). Here is my webgoat webpage running, alongside the CLI to run the jar file I downloaded earlier.
 ![Running_Webgoat](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/3a20f39e-2124-429f-8947-0081c47dfcba)
 
+## Solving Webgoat 2023.4: General: Developer tools.
 
+I completed this exercise using resources from [Cyber World Hindi](https://www.youtube.com/watch?v=S_vkbQId1as&list=PLSbrmTUy4daP4IAndCi5TsJeoDWpPxGc5&index=2)- Webgoat tutorials Videos. Please note it's in Hindi Language.
+
+### HTTP Basics
+
+In Developers tool(F12 or Ctrl+Shift+i), find the Network tab and attck2, and in the Headers tab you will see the Request method POST and under the Payload tab you will find the magic number, in my case the number was 91. I guess it might be different for other.
+
+
+![HTTP_Basics_3_POST](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/37456cfc-d276-4057-b134-34a711ee05f7)
+
+
+![HTTP_Basics_3_number](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/931a97b6-e645-45f8-82b1-3615f7be33ff)
