@@ -51,7 +51,15 @@ In Developers tool(F12 or Ctrl+Shift+i), find the Network tab and attck2, and in
 
 ### HTTP Proxies
 
- HTTP Proxies receive requests from a client and relay them. Proxies sit between your client and the server the client is talking to.
+ HTTP Proxies receive requests from a client and relay them. Proxies sit between your client and the server the client is talking to. I used BurpSuite for this task. You can download and install [BurpSuite here](https://portswigger.net/burp/releases/professional-community-2023-12-1-3?requestededition=community&requestedplatform=). After intercepting the request using Burp proxy we modify according to the task and forward the request to get our answer.
+![HTTP_proxy start](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/d0cd982f-fab7-4108-be30-b27d6d0c57f5)
+![modifying](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/aac16174-5756-4857-a25a-b1381db47bf3)
+
+After forwarding the request manually using the Burp proxy intercept tool we get our result.
+
+![REsult](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/32005d1d-6a60-4a23-a2de-da43900f8497)
+
+
 
  ## d) [SQLZoo Tutorial](https://sqlzoo.net/wiki/SQL_Tutorial)
 
