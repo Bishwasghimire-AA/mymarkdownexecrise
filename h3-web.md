@@ -77,3 +77,11 @@ Third task uses the word BETWEEN to check the range of given data under provided
 
 All the other task went forward easily so I only posted the ones that had given me multiple errors. I have used [Jess Chase](https://thedatasleuth.github.io/2018/08/11/SELECT-Basics.html) for help and reference for all the stuck levels.
 
+On task 6 where we need to show the countries that have name that includes name 'United'. I tried following method
+![United_error](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/7e4c087e-dd42-44b3-a70f-542dc38261fa)
+
+Upon going through my source in [Jess Chase](https://thedatasleuth.github.io/2018/08/11/SELECT-Basics.html) I realized to work this solution we need to add another method LIKE which filters the result in name list. Also the % symbols before and after 'United' are wildcards that match any sequence of characters.
+![SELECT_World_6](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/064dfc0c-fe38-4cd1-85bd-a2441660ce40)
+
+
+
