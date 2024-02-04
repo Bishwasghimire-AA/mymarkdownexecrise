@@ -91,6 +91,26 @@ On task 6 where we need to show the countries that have name that includes name 
 Upon going through my source in [Jess Chase](https://thedatasleuth.github.io/2018/08/11/SELECT-Basics.html) I realized to work this solution we need to add another method LIKE which filters the result in name list. Also the % symbols before and after 'United' are wildcards that match any sequence of characters.
 ![SELECT_World_6](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/064dfc0c-fe38-4cd1-85bd-a2441660ce40)
 
+For task 9 we use a method called ROUND to round up the number to nearest whole number, but the question asked to have 2 decimal place which is done by following code
+
+    SELECT name, ROUND(population/1000000, 2), ROUND(GDP/1000000000, 2)
+    FROM world 
+    WHERE continent = 'South America'
+
+
+ Here the 2 inside the ROUND method helps to have a 2 decimal place in our result
+ ![SELECT_World_9](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/50cffd90-3467-41fc-8fe5-44b080a764e4)
+
+ QUIZ:
+ ![QUIZ](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/dd7ca1c2-b8f8-4eeb-917a-92aef27808ad)
+
+ Using -3 as value to round to nearest thousand.
+ ![SELECT_World_10](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/d199f74c-5ded-4416-8491-78838f9f0ca7)
+ 
+
+ 
+
+
 ## Solving [Portswigger Labs](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
 
 SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. This can allow an attacker to view data that they are not normally able to retrieve. This might include data that belongs to other users, or any other data that the application can access.  A successful SQL injection attack can result in unauthorized access to sensitive data, such as Passwords, Credit card details, Personal user informationetc.
