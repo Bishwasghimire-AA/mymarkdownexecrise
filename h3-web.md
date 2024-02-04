@@ -83,5 +83,17 @@ On task 6 where we need to show the countries that have name that includes name 
 Upon going through my source in [Jess Chase](https://thedatasleuth.github.io/2018/08/11/SELECT-Basics.html) I realized to work this solution we need to add another method LIKE which filters the result in name list. Also the % symbols before and after 'United' are wildcards that match any sequence of characters.
 ![SELECT_World_6](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/064dfc0c-fe38-4cd1-85bd-a2441660ce40)
 
+## Solving [Portswigger Labs](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
+
+SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. This can allow an attacker to view data that they are not normally able to retrieve. This might include data that belongs to other users, or any other data that the application can access.  A successful SQL injection attack can result in unauthorized access to sensitive data, such as Passwords, Credit card details, Personal user informationetc.
+
+For the first apprentice task [SQL injection vulnerability in WHERE clause allowing retrieval of hidden data](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data) I used reference from [HMCyberAcademy](https://www.youtube.com/watch?v=LLrZMCRvP8Y&list=PLDVnRJQ0p1WWsyHE6DJZ_T4bG9Uy9_sik)
+
+![portswigger1](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/12e49e2d-6ebd-4975-b9ad-b6ba83b84232)
+
+This double hyphen '--' is going to comment out anything written after this, so the administartator is taken a query but any query written after that is not executed. Thus we sucessesfully logged in 
+![portswigger2](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/340d00e1-6e9d-4ca9-82d3-c604ede00dfc)
+
+![portswigger2_solved](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/ea72a8c0-9220-40d5-a437-9ab74f50a2f1)
 
 
