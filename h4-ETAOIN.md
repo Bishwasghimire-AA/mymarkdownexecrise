@@ -15,7 +15,17 @@ and sign your data and communications. It features a versatile key management sy
 Steps to send and recieve encrypted message will will require trust for both sender and reciever. This is done by setting a key pair of own and sharing the public key. Help for this task was recieved from [PGP - Send Encrypted and Signed Message - gpg](https://terokarvinen.com/2023/pgp-encrypt-sign-verify/?fromSearch=gpg).
 
 First I create a key pair for myself uaing the following command
+
     gpg --full-generate-key
+
+It gave me a keypair, which consists of both secret key and public key. We will share the public key to anyone who wants to send us a message.
+
+    pub   rsa3072 2024-02-07 [SC] [expires: 2026-02-06]
+      5603147D7F1F0202B15B17C41B16F747A698FC67
+    uid                      bishwas <bishwas@example.com>
+    sub   rsa3072 2024-02-07 [E] [expires: 2026-02-06]
+
+Next we export this public key, So we can exchange with someone.
 
 
 
