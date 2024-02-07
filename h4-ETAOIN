@@ -8,3 +8,8 @@ For this task I choose the Presentation title
 
 ## Encrypting and Decrypting a Message
 
+For this task I choose to use [GNU Privacy Guard](https://www.gnupg.org/index.html), also known as GPG. It is an open source and free tool which allows us to encrypt
+and sign your data and communications. It features a versatile key management system, along with access modules for all kinds of public key directories. GPG already comes installed in our debian OS.
+
+
+
