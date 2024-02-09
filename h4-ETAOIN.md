@@ -17,24 +17,23 @@ For this task I choose the Presentation title [[Disobey 2023] Hacks of the Futur
 
 ## Encrypting and Decrypting a Message
 
-For this task I choose to use [GNU Privacy Guard](https://www.gnupg.org/index.html), also known as GPG. It is an open source and free tool which allows us to encrypt
-and sign your data and communications. It features a versatile key management system, along with access modules for all kinds of public key directories. GPG already comes installed in our debian OS.
+For this task I choose to use [GNU Privacy Guard](https://www.gnupg.org/index.html), also known as GPG. It is an open source and free tool which allows us to encrypt and sign your data and communications. It uses a Asymmetric encryption, meaning it uses two set of keys, Private key and Public key. Public key can be used by the sender to send  an encrypted email to the person whom the key belongs, and the person uses his private key to decrypt the message.  It features a versatile key management system, along with access modules for all kinds of public key directories. GPG already comes installed in our debian OS.
 ![Gpg_version](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/e02941f3-22a0-4a53-bf1f-535376d21c59)
 
 Steps to send and recieve encrypted message will will require trust for both sender and reciever. This is done by setting a key pair of own and sharing the public key. Help for this task was recieved from [PGP - Send Encrypted and Signed Message - gpg](https://terokarvinen.com/2023/pgp-encrypt-sign-verify/?fromSearch=gpg).
 
-First I create a key pair for myself uaing the following command
+First I create a key pair for myself using the following command
 
     gpg --full-generate-key
 
-It gave me a keypair, which consists of both secret key and public key. We will share the public key to anyone who wants to send us a message.
+It gave me a keypair, which consists of both my private(secret) key and public key. We will share the public key to anyone who wants to send us a message.
 
     pub   rsa3072 2024-02-07 [SC] [expires: 2026-02-06]
       5603147D7F1F0202B15B17C41B16F747A698FC67
     uid                      bishwas <bishwas@example.com>
     sub   rsa3072 2024-02-07 [E] [expires: 2026-02-06]
 
-Next we export this public key, So we can exchange with someone.
+Next we export this public key, So we can exchange with someone who wants to send us an messages, in this case **Alice**.
 
 
 
