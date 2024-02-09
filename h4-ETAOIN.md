@@ -14,6 +14,7 @@
 * Cryptoanalysis is the science of recovering plaintext without the key. It  may recover plaintext, key, or find weaknesses in the cryptosystem.
 
 * Four genereal types of cryptoanalytic attacks:
+  
       * Ciphertext-only attack: Where Cryptanalyst has ciphertext of several messages.
       * Known-plaintext attack: Where Cryptanalyst has ciphertext and corresponding plaintext.
       * Chosen-plaintext attack: Where Cryptanalyst chooses plaintext for encryption.
