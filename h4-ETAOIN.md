@@ -21,7 +21,7 @@
   * Adaptive-chosen-plaintext attack: A special case of chosen-plaintext attack with adaptive modifications.
     
 * Common cryptoanalytic attacks are kown-plaintext attacks and chosen-plaintext attacks.
-* Kerckhoffs's Assumption:
+* Kerckhoffs's Assumption:  
     Secrecy should reside entirely in the key.
   
     Assumes cryptanalysts have complete details of cryptographic algorithm and implementation.  
