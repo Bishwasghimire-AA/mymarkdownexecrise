@@ -1,6 +1,6 @@
 # Encryption and Cryptography
 
-## Summary on Applied Cryptography: [Chapter 1: Foundation](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001)
+## x)Summary on Applied Cryptography: [Chapter 1: Foundation](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001)
 
 ### TERMINOLOGY
 
@@ -91,7 +91,7 @@
 
 
 
-## Summary of Prensentation Video by Disobey Youtube Channel
+## x)Summary of Prensentation Video by Disobey Youtube Channel
 
 For this task I choose the Presentation title [[Disobey 2023] Hacks of the Future and The Role of Humans and Hackers - Connie McIntosh](https://www.youtube.com/watch?v=5WoZ9Pv9k0I&t=120s). On this presentation, Connie McIntosh, Head of Market Area Security at Ericsson, discussed the role of humans and hackers in the era of advanced AI technology, focusing on the potential risks and misuse of the popular language model, ChatGPT. The topic of her talk, which is about hackers, humans, and the chat API phenomenon, specifically focusing on the well-known chatbot AI, ChatGPT, from the perspective of a hacker. Here are the key points from the presentation,
 
@@ -111,7 +111,7 @@ For this task I choose the Presentation title [[Disobey 2023] Hacks of the Futur
   
 * There is no way to truly limit AI as it has already been jailbroken, and the profitability of AI makes it unlikely that developers will turn it off. She suggests that regulation may be the only solution, but she doesn't believe it will happen soon enough.
 
-## Encrypting and Decrypting a Message
+## a)Encrypting and Decrypting a Message
 
 For this task I choose to use [GNU Privacy Guard](https://www.gnupg.org/index.html), also known as GPG. It is an open source and free tool which allows us to encrypt and sign your data and communications. It uses a Asymmetric encryption, meaning it uses two set of keys, Private key and Public key. Public key can be used by the sender to send  an encrypted email to the person whom the key belongs, and the person uses his private key to decrypt the message.  It features a versatile key management system, along with access modules for all kinds of public key directories. GPG already comes installed in our debian OS.
 ![Gpg_version](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/e02941f3-22a0-4a53-bf1f-535376d21c59)
@@ -131,7 +131,21 @@ It gave me a keypair, which consists of both my private(secret) key and public k
 
 Next we export this public key, So we can exchange with someone who wants to send us an messages, in this case _Alice_. We can export the keys by following command.
 
+
+
+## 0) Voluntary bonus: ETAOIN
+
+Ciphertext to be cracked:
+
+     HDMH'B TH. KWU'YI AWR WSSTOTMJJK M OWQINYIMLIY! MB KWU BII, BTGPJI BUNBHTHUHTWA OTPDIYB OMA NI NYWLIA RTHD SYIEUIAOK MAMJKBTB. BII KWU MH DHHP://HIYWLMYCTAIA.OWG
+
+To carck this cipher I used the good old pen and paper. At first glance, I didn't even know what I was looking at and where to actually start from. The text are in english but none of the word are making any sense. But, then after spending few time going back and forth with the text, I start to notice something. The main KEY was the final pieces of text, "DHHP://HIYWLMYCTAIA.OWG". This looked like an website, so I assume DHHP must be HTTP and OWG can be either COM or ORG. I start to fill all the ciphered text with these key letters I figured out and everything start to makes sense. I had to make some guesses when I hit the dead end. And finally after a good 2 hours of head scratch and paper scratch I figured out the text. Here is my work in paper.
+ ![Deciphering_ETAOIN_1](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/9b5d0b8b-0247-43e7-bb41-29447e998b6b)
+
+
+The Deciphered text read,
     
+    THAT'S IT. YOU'RE NOW OFFICIALLY A CODEBREAKER! AS YOU SEE SIMPLE SUBSTITUTION CIPHERS CAN BE BROKEN WITH FREQUENCY ANALYSIS. SEE YOU AT HTTP://TEROKARVINEN.COM
 
 
 
