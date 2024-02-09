@@ -2,15 +2,22 @@
 
 ## Summary on Applied Cryptography: [Chapter 1: Foundation](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001)
 
+### TERMINOLOGY
+
 * Messages are plaintext, encryption disguises messages (plaintext) into ciphertext. Decryption is the process of converting ciphertext back to plaintext.
 
 * Authentication: Verifying the origin of a message. Integrity: Ensuring a message has not been modified during transmission. Nonrepudiation: Preventing a sender from denying they sent a message.
+
+### Algorithms and Keys
 
 * Cryptography Algorithm (Cipher) is a mathematical function for encryption and decryption. While restricted Algorithms is not suitable for modern use due to secrecy, lack of standardization, and security issues. Symmetric Algorithms uses the same key for encryption and decryption.
 
 * Public-Key Algorithms(also called asymmetric algorithms) use different keys for encryption and decryption, known as public and private keys.
 
+### Cryptoanalysis
+
 * Purpose of cryptography is to keep plaintext or key secret from eavesdroppers.
+  
 * Cryptoanalysis is the science of recovering plaintext without the key. It  may recover plaintext, key, or find weaknesses in the cryptosystem.
 
 * Four genereal types of cryptoanalytic attacks:
@@ -21,12 +28,68 @@
   * Adaptive-chosen-plaintext attack: A special case of chosen-plaintext attack with adaptive modifications.
     
 * Common cryptoanalytic attacks are kown-plaintext attacks and chosen-plaintext attacks.
+  
 * Kerckhoffs's Assumption:
   
       Secrecy should reside entirely in the key.  
       Assumes cryptanalysts have complete details of cryptographic algorithm and implementation.  
       Emphasizes the importance of peer review for security evaluation.
-    
+
+### Security of Algorithms
+  
+*   Security depends on the difficulty/cost to break the algorithm.  If the amount of data encrypted with a single key is less than the amount of data necessary to break the algorithm, then you're probably safe.
+
+*   Cryptography focuses on computationally secure (strong) algorithms. Algorithm is secure if it cannot be broken with available resources (current or future).
+
+*   You can measure the complexity of an attack in different ways:
+  
+  * Data complexity: Amount of data needed for the attack.
+  * Processing complexity: Time needed for the attack (work factor).
+  * Storage requirements: Amount of memory needed for the attack.
+  * Complexity of an attack is the minimum of these factors.
+*  Good cryptosystems are designed to be infeasible to break with the computing power that is expected to evolve many years in the future.
+
+### STEGANOGRAPHY
+
+* Steganography is a method of concealing secret messages within innocuous messages. Historical methods include, invisible inks, pin punctures, differences in characters, grilles, etc.
+
+* Modern Steganography method includes hiding messages in graphic images by replacing least significant bit of each byte, where the image remains mostly unchanged.
+
+### SUBSTITUTION CIPHERS AND TRANSPOSITION CIPHERS
+
+* Subtitution Cipher replace each character in the plaintext with a corresponding character in the ciphertext. While in Transposition Ciphers plaintext remains the same, but the order of characters is shuffled.
+
+* Rotor machines are mechanical encryption devices introduced in the 1920s. eg. Enigma machine used by Germans in WWII.
+
+### SIMPLE XOR
+
+* Widely used in commercial software, particularly in MS-DOS and Macintosh environments.
+
+* XOR encryption is not secure, easily broken, even without computers. XOR might offer basic protection but is not sufficient against determined cryptanalysis.
+
+### ONE-TIME PADS
+
+* One-Time Pad is a special case of a threshold scheme which involves a large nonrepeating set of truly random key letters. Each key letter is used only once, and used pad pages or tape sections are destroyed. Receiver has an identical pad and decrypts each letter of the ciphertext.
+
+* Suitable for ultra-secure, low-bandwidth channels.
+* Messages encrypted with one-time pads remain secure indefinitely against supercomputers and advanced technology.
+
+* Perfectly secure if an eavesdropper can't access the one-time pad. Every plaintext message is equally possible, making cryptanalysis impossible.
+
+* Suitable for short messages; impractical for high-speed communication channels.
+
+### COMPUTER ALGORITHMS
+
+* Most common algorithms are,
+  * DES(Data Encryption Standard): Most popular computer encryption algorithm. It is a symmetric algorithm which uses the same key for encryption and decryption.
+  * RSA (Rivest, Shamir, and Adleman): Named after its creators, is a popular public-key algorithms used for encryption and digital signatures.
+  * DSA(Digital Signature Algorithm): Is also a public key algorithms which is used exclusively for digital signatures only.
+
+### LARGE NUMBERS
+
+* This part shows the probability of happening something, gathered from various sources.
+
+
 
 ## Summary of Prensentation Video by Disobey Youtube Channel
 
