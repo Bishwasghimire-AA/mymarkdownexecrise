@@ -15,10 +15,10 @@
 
 * Four genereal types of cryptoanalytic attacks:
   
-      * Ciphertext-only attack: Where Cryptanalyst has ciphertext of several messages.
-      * Known-plaintext attack: Where Cryptanalyst has ciphertext and corresponding plaintext.
-      * Chosen-plaintext attack: Where Cryptanalyst chooses plaintext for encryption.
-      * Adaptive-chosen-plaintext attack: A special case of chosen-plaintext attack with adaptive modifications.
+  * Ciphertext-only attack: Where Cryptanalyst has ciphertext of several messages.
+  * Known-plaintext attack: Where Cryptanalyst has ciphertext and corresponding plaintext.
+  * Chosen-plaintext attack: Where Cryptanalyst chooses plaintext for encryption.
+  * Adaptive-chosen-plaintext attack: A special case of chosen-plaintext attack with adaptive modifications.
 
 ## Summary of Prensentation Video by Disobey Youtube Channel
 
