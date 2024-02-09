@@ -24,7 +24,6 @@
 * Kerckhoffs's Assumption:
   
       Secrecy should reside entirely in the key.  
-  
       Assumes cryptanalysts have complete details of cryptographic algorithm and implementation.  
       Emphasizes the importance of peer review for security evaluation.
     
