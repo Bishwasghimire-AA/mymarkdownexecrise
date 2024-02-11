@@ -1,6 +1,6 @@
 # Encryption and Cryptography
 
-## x)Summary on Applied Cryptography: [Chapter 1: Foundation](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001)
+## x) Summary on Applied Cryptography: [Chapter 1: Foundation](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001)
 
 ### TERMINOLOGY
 
@@ -91,7 +91,7 @@
 
 
 
-## x)Summary of Prensentation Video by Disobey Youtube Channel
+## x) Summary of Prensentation Video by Disobey Youtube Channel
 
 For this task I choose the Presentation title [[Disobey 2023] Hacks of the Future and The Role of Humans and Hackers - Connie McIntosh](https://www.youtube.com/watch?v=5WoZ9Pv9k0I&t=120s). On this presentation, Connie McIntosh, Head of Market Area Security at Ericsson, discussed the role of humans and hackers in the era of advanced AI technology, focusing on the potential risks and misuse of the popular language model, ChatGPT. The topic of her talk, which is about hackers, humans, and the chat API phenomenon, specifically focusing on the well-known chatbot AI, ChatGPT, from the perspective of a hacker. Here are the key points from the presentation,
 
@@ -296,38 +296,6 @@ And now bishwas can read the secret message sent by alice.
 ![decrypted_message](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/7ba6cc61-d10f-4fb6-ba72-6d903d76a348)
 
 Using this method we can send and recieve encrypted message with anyone in the internet using 'GPG'
-
-
-
-
-
-    
-
-    
-
-
-
-    
-
-
-
-    
- 
-
-
-
-
-
-    
-
-
-
-  
-
-  
-
-  
-
 
 
 ## 0) Voluntary bonus: ETAOIN
