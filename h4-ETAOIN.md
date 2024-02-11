@@ -132,6 +132,202 @@ It gave me a keypair, which consists of both my private(secret) key and public k
 
 Next we export this public key, So we can exchange with someone who wants to send us an messages, in this case _Alice_. We can export the keys by following command.
 
+    $ gpg --export --armor --output bishwas.pub
+
+Using this commnad we save our file as "bishwas.pub" in hour home directory
+
+Next we simulate _Alice_ for sending the message. We do this by using a folder to simulate Alice as different user in differnt OS or different computer. First we create a folder named Alice in our home directory and we change the mode of the folder to be only used by us as the owner.
+
+    $ mkdir alice/
+    $ chmod og-rwx alice/
+
+Above command let us to create a working folder ALice in our home directory and give us permission to read,write and execute this folder. Form now this folder be used as a different user. To simulate Alice, we can just work inside this folder, and replace 'gpg' with 'gpg --homedir .' This way, Alice has her own settings and own keyring, separate from the one we actually use. Next we run the 'gpg' command to create alice configuration files.
+
+    $ gpg --homedir . --fingerprint
+    gpg: keybox '/home/bishwasg/alice/pubring.kbx' created
+    gpg: /home/bishwasg/alice/trustdb.gpg: trustdb created
+
+NOTE: Every command we run as Alice must start with 'gpg --homedir .'
+
+Next we create Alice's keypair as we created our own.
+
+    $ gpg --homedir . --gen-key
+
+This gives us a key pair for Alice
+
+    pub   rsa3072 2024-02-11 [SC] [expires: 2026-02-10]
+      627E2AA5DC1D5646D1D0F08546054FBB63095792
+    uid                      alice <alice@test.com>
+    sub   rsa3072 2024-02-11 [E] [expires: 2026-02-10]
+
+Next Alice imports the  public key of bishwas named 'bishwas.pub', which we had exported earlier in our home directory. First we copy the file 'bishwas.pub' to Alice folder and then alice imports the key in her own directory.
+
+    cp -v bishwas.pub alice/
+    'bishwas.pub' -> 'alice/bishwas.pub'
+
+    gpg --homedir . --import bishwas.pub 
+    gpg: key 1B16F747A698FC67: public key "bishwas <bishwas@example.com>" imported
+    gpg: Total number processed: 1
+    gpg:               imported: 1
+
+Alice can check the fingerprint to verify that this is indeed bishwas's key. This step is needed if Tero's public key was obtained over insecure channel, like unencrypted email, a web page or a key server.
+
+    pub   rsa3072 2024-02-11 [SC] [expires: 2026-02-10]
+      627E 2AA5 DC1D 5646 D1D0  F085 4605 4FBB 6309 5792
+    uid           [ultimate] alice <alice@test.com>
+    sub   rsa3072 2024-02-11 [E] [expires: 2026-02-10]
+
+    pub   rsa3072 2024-02-07 [SC] [expires: 2026-02-06]
+      5603 147D 7F1F 0202 B15B  17C4 1B16 F747 A698 FC67
+    uid           [ unknown] bishwas <bishwas@example.com>
+    sub   rsa3072 2024-02-07 [E] [expires: 2026-02-06]
+
+Here we can see all the public key that Alice holds, which can be used to send the encrypted message to the public key holder. Next ALice signs bishwas key to mark it as trusted, which can be done using the publick key or email address.
+
+      gpg --homedir . --sign-key bishwas@example.com 
+
+    pub  rsa3072/1B16F747A698FC67
+     created: 2024-02-07  expires: 2026-02-06  usage: SC  
+     trust: unknown       validity: unknown
+    sub  rsa3072/0570CD4ED29F4FDB
+     created: 2024-02-07  expires: 2026-02-06  usage: E   
+    [ unknown] (1). bishwas <bishwas@example.com>
+
+
+    pub  rsa3072/1B16F747A698FC67
+     created: 2024-02-07  expires: 2026-02-06  usage: SC  
+     trust: unknown       validity: unknown
+     Primary key fingerprint: 5603 147D 7F1F 0202 B15B  17C4 1B16 F747 A698 FC67
+
+     bishwas <bishwas@example.com>
+
+    This key is due to expire on 2026-02-06.
+    Are you sure that you want to sign this key with your
+    key "alice <alice@test.com>" (46054FBB63095792)
+
+    Really sign? (y/N) y
+
+We can check the trust by.
+
+    $ gpg --homedir . --fingerprint
+    gpg: checking the trustdb
+    gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+    gpg: depth: 0  valid:   1  signed:   1  trust: 0-, 0q, 0n, 0m, 0f, 1u
+    gpg: depth: 1  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
+    gpg: next trustdb check due at 2026-02-06
+    /home/bishwasg/alice/pubring.kbx
+    --------------------------------
+    pub   rsa3072 2024-02-11 [SC] [expires: 2026-02-10]
+      627E 2AA5 DC1D 5646 D1D0  F085 4605 4FBB 6309 5792
+    uid           [ultimate] alice <alice@test.com>
+    sub   rsa3072 2024-02-11 [E] [expires: 2026-02-10]
+
+    pub   rsa3072 2024-02-07 [SC] [expires: 2026-02-06]
+      5603 147D 7F1F 0202 B15B  17C4 1B16 F747 A698 FC67
+    uid           [  full  ] bishwas <bishwas@example.com>
+    sub   rsa3072 2024-02-07 [E] [expires: 2026-02-06]
+
+Using this trust Alice can now send encrypted message to bishwas. Bishwas also needs Alice's key to know that the message is really from Alice. The process is same as above, Importing alice's key, verifying and trusting the key. First we export alice's  key and copy in our home directory.cd
+
+    $ gpg --homedir . --export --armor --output alice.pub
+    cp -v alice/alice.pub .
+    'alice/alice.pub' -> './alice.pub'
+
+Next bishwas imports alice's keys and verifies it
+
+    gpg --import alice.pub 
+    gpg: key 46054FBB63095792: public key "alice <alice@test.com>" imported
+    gpg: key 1B16F747A698FC67: "bishwas <bishwas@example.com>" 1 new signature
+
+    gpg --sign-key alice@test.com
+
+    gpg --fingerprint
+    gpg: checking the trustdb
+    gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+    gpg: depth: 0  valid:   1  signed:   1  trust: 0-, 0q, 0n, 0m, 0f, 1u
+    gpg: depth: 1  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
+    gpg: next trustdb check due at 2026-02-06
+    /home/bishwasg/.gnupg/pubring.kbx
+    ---------------------------------
+    pub   rsa3072 2024-02-07 [SC] [expires: 2026-02-06]
+      5603 147D 7F1F 0202 B15B  17C4 1B16 F747 A698 FC67
+    uid           [ultimate] bishwas <bishwas@example.com>
+    sub   rsa3072 2024-02-07 [E] [expires: 2026-02-06]
+
+    pub   rsa3072 2024-02-11 [SC] [expires: 2026-02-10]
+      627E 2AA5 DC1D 5646 D1D0  F085 4605 4FBB 6309 5792
+    uid           [  full  ] alice <alice@test.com>
+    sub   rsa3072 2024-02-11 [E] [expires: 2026-02-10]
+
+Now the trust between bishwas and alice have established on both keyring. Next alice sends a encrypted message to bishwas
+First create a message.
+
+    $ nano message.txt
+
+![Secret message](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/b117b1f9-ba4c-413d-b311-e855439ba268)
+
+
+Next we encrypt and send the message and send to bishwas.
+
+    $ gpg --homedir . -e -r bishwas@example.com -s -o encrypted.gpg -a message.txt 
+
+Here,
+  * -e is to encrypt the message
+  * -r is the recipient bishwas@example.com
+  * -s, we sign our message using alice secret key, So bishwas can use alices's public key to decrypt the message
+  * -a, is armor command to to make the message printable
+  * -o output the 'message.txt' file as 'encrypted.gpg' file
+
+After the encryption of our original message.txt file to encrypted.gpg file. It looks as follow
+
+![Encrypted_secret_message](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/4e575a5c-868a-435a-b36d-9fc80dfdcc5b)
+
+Even Alice can't decrypt the message now. It's been encrypted with bishwas's public key. Only bishwas can open it, because only bishwas has bishwas's secret key. We can send this encrypted file over the internet to bishwas now, but we are using simulation here so we copy this file to our home directory from alice's folder.
+
+     $ cp -v alice/encrypted.gpg .
+    'alice/encrypted.gpg' -> './encrypted.gpg'
+
+Once the message is in home directory of bishwas, he can decrypt the message using his secret key.
+
+    $ gpg -d encrypted.gpg 
+
+And now bishwas can read the secret message sent by alice.
+
+![decrypted_message](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/7ba6cc61-d10f-4fb6-ba72-6d903d76a348)
+
+Using this method we can send and recieve encrypted message with anyone in the internet using 'GPG'
+
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+    
+ 
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
 
 
 ## 0) Voluntary bonus: ETAOIN
