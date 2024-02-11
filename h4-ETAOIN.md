@@ -117,7 +117,7 @@ For this task I choose to use [GNU Privacy Guard](https://www.gnupg.org/index.ht
 
 ![Gpg_version](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/e02941f3-22a0-4a53-bf1f-535376d21c59)
 
-Steps to send and recieve encrypted message will will require trust for both sender and reciever. This is done by setting a key pair of own and sharing the public key. Help for this task was recieved from [PGP - Send Encrypted and Signed Message - gpg](https://terokarvinen.com/2023/pgp-encrypt-sign-verify/?fromSearch=gpg). This task is done mainly in a Linux Terminal.
+Steps to send and recieve encrypted message  will require trust between both sender and reciever. This is done by setting a key pair of own and sharing the public key. Help for this task was recieved from [PGP - Send Encrypted and Signed Message - gpg](https://terokarvinen.com/2023/pgp-encrypt-sign-verify/?fromSearch=gpg). This task is done mainly using  Linux Terminal.
 
 First I create a key pair for myself using the following command
 
