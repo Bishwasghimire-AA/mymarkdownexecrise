@@ -141,7 +141,7 @@ Next we simulate _Alice_ for sending the message. We do this by using a folder t
     $ mkdir alice/
     $ chmod og-rwx alice/
 
-Above command let us to create a working folder ALice in our home directory and give us permission to read,write and execute this folder. Form now this folder be used as a different user. To simulate Alice, we can just work inside this folder, and replace 'gpg' with 'gpg --homedir .' This way, Alice has her own settings and own keyring, separate from the one we actually use. Next we run the 'gpg' command to create alice configuration files.
+Above command let us to create a working folder Alice in our home directory and give us permission to read,write and execute this folder. Form now this folder be used as a different user. To simulate Alice, we can just work inside this folder, and replace 'gpg' with 'gpg --homedir .' This way, Alice has her own settings and own keyring, separate from the one we actually use. Next we run the 'gpg' command to create alice configuration files.
 
     $ gpg --homedir . --fingerprint
     gpg: keybox '/home/bishwasg/alice/pubring.kbx' created
@@ -170,7 +170,7 @@ Next Alice imports the  public key of bishwas named 'bishwas.pub', which we had 
     gpg: Total number processed: 1
     gpg:               imported: 1
 
-Alice can check the fingerprint to verify that this is indeed bishwas's key. This step is needed if Tero's public key was obtained over insecure channel, like unencrypted email, a web page or a key server.
+Alice can check the fingerprint to verify that this is indeed bishwas's key. This step is needed if bishwas's public key was obtained over insecure channel, like unencrypted email, a web page or a key server.
 
     pub   rsa3072 2024-02-11 [SC] [expires: 2026-02-10]
       627E 2AA5 DC1D 5646 D1D0  F085 4605 4FBB 6309 5792
@@ -182,7 +182,7 @@ Alice can check the fingerprint to verify that this is indeed bishwas's key. Thi
     uid           [ unknown] bishwas <bishwas@example.com>
     sub   rsa3072 2024-02-07 [E] [expires: 2026-02-06]
 
-Here we can see all the public key that Alice holds, which can be used to send the encrypted message to the public key holder. Next ALice signs bishwas key to mark it as trusted, which can be done using the publick key or email address.
+Here we can see all the public key that Alice holds, which can be used to send the encrypted message to the public key holder. Next Alice signs bishwas key to mark it as trusted, which can be done using the publick key or email address.
 
       gpg --homedir . --sign-key bishwas@example.com 
 
