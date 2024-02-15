@@ -43,9 +43,37 @@ My choice among these password manager is Bitwarden because,
 
 ## d) Demonstration of Bitwarden
 
-* Fist [download](https://bitwarden.com/download/) and install the Bitwarden app for your desired Operating System, Supported Os are Windows, MacOs and Linux
+* First [download](https://bitwarden.com/download/) and install the Bitwarden app for your desired Operating System, Supported Os are Windows, MacOs and Linux
 * Also available as your web browser extension supported by popular browsers like Chrome, Safari, Firefox, Brave, Microsoft edge, Tor browser etc to name some.
 * Also abilable as Mobile application in PlayStore or Google play store.
 
-Next, you can can create a personal account to [sign up](https://vault.bitwarden.com/#/register?layout=default) for bitwarden app. NOTE: Other plans are going to cost you some money for subscription.
+Next, you can can create a personal account to [sign up](https://vault.bitwarden.com/#/register?layout=default) for bitwarden app. NOTE: Other plans are going to cost you some money for subscription. After creating your account you are ready to use the Bitwarden as your password manager.
+
+For this demonstration I choose the [Laksu](https://app.terokarvinen.com/) website. When you try to login using your credentials to the website you will be asked to confirm weather you want Bitwarden to save the password or not. 
+
+![LAksu_login](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/b7cdc2d5-987b-4d34-a925-473ebb98f691)
+
+In my case I choose to save my password in the "TEST" folder I created earlier. You can create different folders beforehand in the Bitwarden app as per your needs to save the passwords.
+
+![Saving_password_Bitwarden](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/30895a38-3608-42e9-a945-fddf45518ad3)
+
+This saved password will be used next time you try to login to your website. Also if you forget your password, now you can go to your Bitwarden app and view your password there.
+![Bitwarden_dash](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/2eca2318-00ae-4e74-803e-820b88a92177)
+
+You can also save your bank card details, Ids and confidential documents in the Bitwarden app. As already mentioned earlier all the password and documents are encrypted inside the app. So only your Password for the Bitwarden app is going to unlock the saved password in a plain-text for you to read otherwise its all encrypted using hashes which isn't understandable to normal people. Therefore, only password now you are going to need to remember is your Bitwarden app login password only.
+
+Using Bitwarden you can also check vulnerability of your passwords. Bitwarden will tell you if passwords like yours have been exposed by hacker previously or not.
+
+![exposed_password](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/bc925113-898c-4399-add4-a9d015441af1)
+
+![Not_exposed](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/f7d46049-b5c7-4b02-b4ee-2f0a324ef64b)
+
+Finally, it's a smart choice to set up a [Two-Factor Authentication(2FA)](https://bitwarden.com/help/setup-two-step-login/) for your Bitwarden app to increase the security and protection of your valuable password and data.
+
+
+![2 step login](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/d0b4449b-6d5c-4841-a0fd-813c5ca71eb4)
+
+
+
+
 
