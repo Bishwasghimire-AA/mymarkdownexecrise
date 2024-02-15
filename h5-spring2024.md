@@ -35,9 +35,17 @@ Here is the shortlist of some parrword managers of my choice,
 
 My choice among these password manager is Bitwarden because,
 
-* Bitearden protects against password breaches, unauthorized access, and insecure password practices.
+* Bitwarden protects against password breaches, unauthorized access, and insecure password practices.
 * Bitwarden offers strong security with end-to-end encryption, open-source transparency, and flexible hosting options.
 * All data, including passwords, is end-to-end encrypted.
 * Open source license with premium plans available, which encourage and promote community-driven security audits.
 * Cloud-based storage, which is customizable, allowing users to choose Bitwarden's servers or self-hosting for added control.
+
+## d) Demonstration of Bitwarden
+
+* Fist [download](https://bitwarden.com/download/) and install the Bitwarden app for your desired Operating System, Supported Os are Windows, MacOs and Linux
+* Also available as your web browser extension supported by popular browsers like Chrome, Safari, Firefox, Brave, Microsoft edge, Tor browser etc to name some.
+* Also abilable as Mobile application in PlayStore or Google play store.
+
+Next, you can can create a personal account to [sign up](https://vault.bitwarden.com/#/register?layout=default) for bitwarden app. NOTE: Other plans are going to cost you some money for subscription.
 
