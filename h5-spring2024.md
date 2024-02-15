@@ -1,6 +1,6 @@
 # Hashcat
 
-## Sumarry of [Schneier 2015: Applied Cryptography](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02)
+## x) Sumarry of [Schneier 2015: Applied Cryptography](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02)
 
 ### [2.3 ONE-WAY FUNCTIONS](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec003)
 
@@ -22,4 +22,22 @@
 * Message Authentication Codes (MAC) is a one-way hash function with the addition of a secret key.
 * MAC has similar theory to hash functions, but only someone with the key can verify the hash value.
 * MAC cryptographic mechanism provides a layer of confidentiality, allowing parties with the secret key to authenticate the origin and integrity of the message or data.
+
+## a) and b) Installing hashcat and cracking hash
+
+## c) Choosing a password manager
+
+Here is the shortlist of some parrword managers of my choice,
+
+* [LastPass](https://www.lastpass.com/why-lastpass)
+* [1Password](https://1password.com/product/features)
+* [Bitwarden](https://bitwarden.com/about/)
+
+My choice among these password manager is Bitwarden because,
+
+* Bitearden protects against password breaches, unauthorized access, and insecure password practices.
+* Bitwarden offers strong security with end-to-end encryption, open-source transparency, and flexible hosting options.
+* All data, including passwords, is end-to-end encrypted.
+* Open source license with premium plans available, which encourage and promote community-driven security audits.
+* Cloud-based storage, which is customizable, allowing users to choose Bitwarden's servers or self-hosting for added control.
 
