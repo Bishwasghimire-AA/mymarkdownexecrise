@@ -25,17 +25,67 @@
 
 ## a) and b) Installing hashcat and cracking hash
 
+[Hashcat](https://hashcat.net/wiki/doku.php?id=hashcat) is the world’s fastest and most advanced password recovery tool. In this task we will Install hashcat in our debian OS in our Virtualbox. Some Linux distros have hashcat pre-installed in it. Our debian OS doesnot have hashcat preinstalled so we need to install the hashcat first. I have used [Cracking Passwords with Hashcat](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/) and [How to use Hashcat Tutorial 2024](https://www.youtube.com/watch?v=5fy6Lq1vgZk&t=553s) for help with this task. You can install the hashcat by following command.
 
+    sudo apt-get -y install hashid hashcat wget
 
+After the installation we create a working directory for our work. I create a folder in my desktop called 'hashed'. you can create by folllowing command. 
 
+    cd Desktop/
+    ~/Desktop$ mkdir hashed
+    $ cd hashed/
+    
+Now we will be inside our weorking directory. First thing we need now is the list of word dictionary from the internet or you can create your own too. For this exercise we will download a dictionary from the internet. I downloaded the [Rockyou](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz) text file in my working directory. This dictionary consists of more than 14 million words text that have been known to be used as common password. We download the .tar.gz file which is a compressed file and we will decompress using tar command as follow.
 
+    $ wget https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
+    $ tar xf rockyou.txt.tar.gz
 
+![Download_rockyou_txt](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/e9cd8525-aa35-48d5-900d-0505fe9db033)
 
+Now we have the rockyou.txt file in our working directory. Next we will crack this '8eb8e307a6d649bc7fb51443a06a216f'. In order to crack the hash we need to identify the hash types. It can be done in the terminal or by going to the [Hash Analyzer](https://www.tunnelsup.com/hash-analyzer/) website and check your hash type. Most common hash type are MD(MD2, MD4, MD5). The command to check the hash type is as follow.
 
+    $ hashid -m 8eb8e307a6d649bc7fb51443a06a216f
+    
+![hashtype_search](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/882579c0-d34f-488e-906e-225e9b0b1d6e)
 
+This command gives us possible hash types. Often, the right type is among top three candidates. If not, you can rule out many candidates based on where the hash was obtained (Windows, Linux...).
 
+Let's try with md5, as it's a very common hash compared to md2 and md4.
 
+Also you can type the following command in your terminal to get all the commands and help with using hashcat.
+       
+    $ hashcat --help
 
+Above command gives you all the list of hashcat commands including the hashes code and much more
+
+![Hashcat_help](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/2e151f9e-5264-4841-8a62-5f31f0de7f63)
+
+Lets crack the hash '8eb8e307a6d649bc7fb51443a06a216f', it can be cracked with the following command
+
+    $ hashcat -m 0 '8eb8e307a6d649bc7fb51443a06a216f' rockyou.txt -o solved  
+
+This command means
+
+* hashcat : 	the hash cracking program we just installed
+* -m 0 :	type of the hash, the number we obtained from 'hashid' serach above
+* '8eb8e307a6d649bc7fb51443a06a216f' : the hash we want to crack. Put single quotes around it, as many hashes contain special characters.
+* rockyou.txt : Tells where to look for the reference word dictionary files
+* -o solved : save the solution as plain text to a new file "solved" in working directory
+
+The result is follow.
+
+![cracked](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/2bb9ff1f-7b10-4fd8-a085-8664ed22f4ec)
+
+Now we have cracked he password and its saved in our 'solved' file. We can read the content in our file by following command.
+
+      /Desktop/hashed$ cat solved 
+      8eb8e307a6d649bc7fb51443a06a216f:february
+
+So the password is February.
+    
+![password is](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/9c773593-c442-4efc-9456-b2daac9cdb4a)
+
+Cracking the password took about 5 seconds but if you have large database then it might take more time since our OS is a virtual machine. Just run it on your host OS, on real hardware and not a virtual machine. It will automatically detect your display adapter (GPU) and use that for a huge speed boost.
 
 
 ## c) Choosing a password manager
