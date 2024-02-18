@@ -35,7 +35,7 @@ After the installation we create a working directory for our work. I create a fo
     ~/Desktop$ mkdir hashed
     $ cd hashed/
     
-Now we will be inside our weorking directory. First thing we need now is the list of word dictionary from the internet or you can create your own too. For this exercise we will download a dictionary from the internet. I downloaded the [Rockyou](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz) text file in my working directory. This dictionary consists of more than 14 million words text that have been known to be used as common password. We download the .tar.gz file which is a compressed file and we will decompress using tar command as follow.
+Now we will be inside our working directory. First thing we need now is the list of word dictionary from the internet or you can create your own too. For this exercise we will download a dictionary from the internet. I downloaded the [Rockyou](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz) text file in my working directory. This dictionary consists of more than 14 million words text that have been known to be used as common password. We download the .tar.gz file which is a compressed file and we will decompress using tar command as follow.
 
     $ wget https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
     $ tar xf rockyou.txt.tar.gz
