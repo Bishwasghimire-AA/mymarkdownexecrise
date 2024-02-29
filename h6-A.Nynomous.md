@@ -23,4 +23,10 @@ Above command starts the tor browser.
 
 ## b) Browsing TOR network
 
-## 
+The search engine I used is [Ahmia](https://ahmia.fi/]. This site's onion address is "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/". On this website you can search for queries.
+
+
+![Ahmia_search_page](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/78ced196-dd9a-4ae7-b8a2-7f6a2cce7a2c)
+
+I searched for 'Forums' and I choose a forum called 'Darknet Army', whose onion address is,"http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/". On this forum
+
