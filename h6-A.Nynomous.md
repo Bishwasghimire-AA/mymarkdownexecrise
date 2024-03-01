@@ -31,7 +31,7 @@
 ## a) Install TOR browser 
 I am using Debian "Bookworm" OS for this task. First you [Download](https://www.torproject.org/dist/torbrowser/13.0.10/tor-browser-linux-x86_64-13.0.10.tar.xz) the .tar file from the [Torproject](https://www.torproject.org/download/) website. It wil be downloaded in the Downloads directory. 
 
-Next you can extract the .tar file from the GUI by right clicking the folder and selecting the option to archive the folder. Alternatively yo can run the following command in your terminal.
+Next you can extract the .tar file from the GUI by right clicking the folder and selecting the option to archive the folder. Alternatively, you can also run the following command in your terminal.
 
     Downloads$ tar xf tor-browser-linux-x86_64-13.0.10.tar.xz
     Downloads$ cd tor-browser/
@@ -45,12 +45,12 @@ Above command starts the tor browser.
 
 ## b) Browsing TOR network
 
-The search engine I used is [Ahmia](https://ahmia.fi/]. This site's onion address is "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/". On this website you can search for queries.
+The search engine I used is, [Ahmia](https://ahmia.fi/]. This site's onion address is "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/".This website is also available in the clear net as well, on this website is like the google of the dark web.
 
 
 ![Ahmia_search_page](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/78ced196-dd9a-4ae7-b8a2-7f6a2cce7a2c)
 
-I searched for 'Forums' and I choose a forum called 'Darknet Army', whose onion address is,"http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/". This forum is called hacking/carding forum. This forum has its own marketplace too where you can buy credit card details, malwares, software product keys, Hotel reservation and flight tickets too. Beside this people also seem to use the forum for some request such as passports, databases, muscle for hire as well. 
+I also searched for some  'Forums' and I found a forum called 'Darknet Army', whose onion address is,"http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/". This forum is called hacking/carding forum. This forum has its own marketplace too where you can buy credit card details, malwares, software product keys, Hotel reservation and flight tickets too. Beside this people also seem to use the forum for some request such as passports, databases, muscle for hire as well. 
 
 ![Darknet_army](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/a78ea38e-39f6-4064-aff6-f0b4b01706f2)
 
@@ -60,6 +60,6 @@ I visited some marketplace in the dark web. I was particularly interested in the
 ![Silkroad](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/e47ac5bc-20ab-46ec-a39c-14cd79032fa5)
 
 
-Going through searches in https://ahmia.fi/ there are plenty of well known websites from leading Newsagency and govenment organisations. I even found US government spy agency called CIA in the darkweb whose onion address is, "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/". I'm not sure if this is an official website from the government or not. The site have all the information on hiring process, forums and their own library. Just below is the picture of CIA's website in dark web and clear web with own DNS name.
+Going through searches in https://ahmia.fi/ there are plenty of well known websites from leading newsagency and govenment organisations globally. I even found the US government spy agency called CIA in the darkweb whose onion address is, "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/". I'm not sure if this is an official website from the government or not. The site have all the information on hiring process, forums and their own library. Just below is the picture of CIA's website in dark web and clear web with own address respectively.
 
 ![Dark_vs_clear_CIA](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/fbae795a-4995-4771-8943-dda4977bb05c)
