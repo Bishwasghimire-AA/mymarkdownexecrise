@@ -45,7 +45,7 @@ Above command starts the tor browser.
 
 ## b) Browsing TOR network
 
-The search engine I used is, [Ahmia](https://ahmia.fi/]. This site's onion address is "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/".This website is also available in the clear net as well, on this website is like the google of the dark web.
+The search engine I used is, [Ahmia](https://ahmia.fi/). This site's onion address is "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/".This website is also available in the clear net as well, this website is like the google of the dark web.
 
 
 ![Ahmia_search_page](https://github.com/bishwasghimire22/mymarkdownexecrise/assets/144313610/78ced196-dd9a-4ae7-b8a2-7f6a2cce7a2c)
